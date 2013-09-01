@@ -1,0 +1,64 @@
+{
+    "name": "Apache Tika",
+    "apiVersion": "1.4",
+    "description": "content analysis toolkit http://tika.apache.org",
+    "operations": {
+        "_base": {
+            "errorResponses": [
+                {
+                    "type": "415",
+                    "phrase": "Unknown file type"
+                },
+                {
+                    "type": "422",
+                    "phrase": "Unparsable document of known type"
+                },
+                {
+                    "type": "500",
+                    "phrase": "Internal error"
+                }
+            ]
+        },
+        "tika": {
+            "extends": "_base",
+            "httpMethod": "PUT",
+            "uri": "tika",
+            "summary": "extract content",
+            "responseNotes": "",
+            "description": "string",
+            "parameters": {
+                "file" : {
+                    "location": "body",
+                    "required": true
+                },
+                "type" : {
+                    "location": "header",
+                    "sentAs": "Accept",
+                    "default": "text/xml",
+                    "static": true
+                }
+            }
+        },
+        "meta": {
+            "extends": "_base",
+            "httpMethod": "PUT",
+            "uri": "meta",
+            "summary": "extract metadata",
+            "parameters": {
+                "file" : {
+                    "location": "body",
+                    "required": true
+                },
+                "type" : {
+                    "location": "header",
+                    "sentAs": "Accept",
+                    "default": "text/csv",
+                    "static": true
+                }
+            }
+        }
+    },
+    "models": {
+    },
+    "includes": []
+}

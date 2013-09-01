@@ -1,0 +1,18 @@
+{
+    "name": "bangpound/tika-rest-client",
+    "description": "Web services client for Apache Tika",
+    "require": {
+        "guzzle/guzzle": "~3.7.2"
+    },
+    "authors": [
+        {
+            "name": "Benjamin Doherty",
+            "email": "bjd@bangpound.org"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Bangpound\\Tika\\": "src/"
+        }
+    }
+}
