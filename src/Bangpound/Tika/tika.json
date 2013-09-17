@@ -55,6 +55,21 @@
                     "static": true
                 }
             }
+        },
+        "unpacker": {
+            "extends": "_base",
+            "uri": "unpacker",
+            "parameters": {
+                "file" : {
+                    "location": "body",
+                    "required": true
+                },
+                "type" : {
+                    "location": "header",
+                    "sentAs": "Accept",
+                    "default": "application/zip"
+                }
+            }
         }
     },
     "models": {
