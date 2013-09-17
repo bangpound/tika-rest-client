@@ -4,6 +4,7 @@
     "description": "content analysis toolkit http://tika.apache.org",
     "operations": {
         "_base": {
+            "httpMethod": "PUT",
             "errorResponses": [
                 {
                     "type": "415",
@@ -21,7 +22,6 @@
         },
         "tika": {
             "extends": "_base",
-            "httpMethod": "PUT",
             "uri": "tika",
             "summary": "extract content",
             "responseNotes": "",
@@ -41,7 +41,6 @@
         },
         "meta": {
             "extends": "_base",
-            "httpMethod": "PUT",
             "uri": "meta",
             "summary": "extract metadata",
             "parameters": {
