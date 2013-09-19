@@ -1,6 +1,7 @@
 {
     "name": "bangpound/tika-rest-client",
     "description": "Web services client for Apache Tika",
+    "license": "MIT",
     "require": {
         "guzzle/guzzle": "~3.7.2"
     },
