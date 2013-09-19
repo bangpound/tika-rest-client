@@ -25,6 +25,8 @@
             "uri": "tika",
             "summary": "extract content",
             "responseNotes": "",
+            "responseType": "class",
+            "responseClass": "Bangpound\\Tika\\TikaResponse",
             "description": "string",
             "parameters": {
                 "file" : {
