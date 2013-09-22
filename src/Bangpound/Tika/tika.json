@@ -41,9 +41,8 @@
                     "location": "body",
                     "required": true
                 },
-                "type" : {
+                "Accept": {
                     "location": "header",
-                    "sentAs": "Accept",
                     "default": "text/xml",
                     "static": true
                 }
@@ -58,9 +57,8 @@
                     "location": "body",
                     "required": true
                 },
-                "type" : {
+                "Accept": {
                     "location": "header",
-                    "sentAs": "Accept",
                     "default": "text/csv",
                     "static": true
                 }
@@ -74,9 +72,8 @@
                     "location": "body",
                     "required": true
                 },
-                "type" : {
+                "Accept": {
                     "location": "header",
-                    "sentAs": "Accept",
                     "default": "application/zip"
                 }
             }
