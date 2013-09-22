@@ -30,7 +30,7 @@
         },
         "tika": {
             "extends": "_base",
-            "uri": "tika",
+            "uri": "tika{/id}",
             "summary": "extract content",
             "responseNotes": "",
             "responseType": "class",
@@ -41,6 +41,10 @@
                     "location": "body",
                     "required": true
                 },
+                "id": {
+                    "location": "uri",
+                    "required": false
+                },
                 "Accept": {
                     "location": "header",
                     "default": "text/xml",
@@ -50,12 +54,16 @@
         },
         "meta": {
             "extends": "_base",
-            "uri": "meta",
+            "uri": "meta{/id}",
             "summary": "extract metadata",
             "parameters": {
                 "file": {
                     "location": "body",
                     "required": true
+                },
+                "id": {
+                    "location": "uri",
+                    "required": false
                 },
                 "Accept": {
                     "location": "header",
@@ -66,11 +74,15 @@
         },
         "unpacker": {
             "extends": "_base",
-            "uri": "unpacker",
+            "uri": "unpacker{/id}",
             "parameters": {
                 "file": {
                     "location": "body",
                     "required": true
+                },
+                "id": {
+                    "location": "uri",
+                    "required": false
                 },
                 "Accept": {
                     "location": "header",
