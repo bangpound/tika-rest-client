@@ -1,0 +1,68 @@
+HTTP/1.1 200 OK
+Content-Type: text/xml
+Date: Sun, 22 Sep 2013 15:16:49 GMT
+Content-Length: 2469
+Server: Jetty(7.x.y-SNAPSHOT)
+
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="dcterms:modified" content="2007-09-15T09:02:31Z"/>
+<meta name="meta:creation-date" content="2007-09-15T09:02:31Z"/>
+<meta name="meta:save-date" content="2007-09-15T09:02:31Z"/>
+<meta name="dc:creator" content="Bertrand Delacrétaz"/>
+<meta name="Last-Modified" content="2007-09-15T09:02:31Z"/>
+<meta name="Author" content="Bertrand Delacrétaz"/>
+<meta name="dcterms:created" content="2007-09-15T09:02:31Z"/>
+<meta name="date" content="2007-09-15T09:02:31Z"/>
+<meta name="modified" content="2007-09-15T09:02:31Z"/>
+<meta name="creator" content="Bertrand Delacrétaz"/>
+<meta name="xmpTPg:NPages" content="1"/>
+<meta name="Creation-Date" content="2007-09-15T09:02:31Z"/>
+<meta name="meta:author" content="Bertrand Delacrétaz"/>
+<meta name="created" content="Sat Sep 15 04:02:31 CDT 2007"/>
+<meta name="producer" content="Mac OS X 10.4.10 Quartz PDFContext"/>
+<meta name="Content-Type" content="application/pdf"/>
+<meta name="xmp:CreatorTool" content="Firefox"/>
+<meta name="Last-Save-Date" content="2007-09-15T09:02:31Z"/>
+<meta name="dc:title" content="Apache Tika - Apache Tika"/>
+<title>Apache Tika - Apache Tika</title>
+</head>
+<body>
+<div class="page">
+<p/>
+<p>Apache Tika - Apache Tika http://incubator.apache.org/tika/
+</p>
+<p>1 of 1 15.9.2007 11:02
+</p>
+<p>Tika - Content Analysis Toolkit
+</p>
+<p>Apache Tika is a toolkit for detecting and extracting metadata and structured text content 
+</p>
+<p>from various documents using existing parser libraries. 
+</p>
+<p>Apache Tika is an effort undergoing incubation at The Apache Software Foundation (ASF), 
+</p>
+<p>sponsored by the Apache Lucene PMC. Incubation is required of all newly accepted projects 
+</p>
+<p>until a further review indicates that the infrastructure, communications, and decision making 
+</p>
+<p>process have stabilized in a manner consistent with other successful ASF projects. While 
+</p>
+<p>incubation status is not necessarily a reflection of the completeness or stability of the code, it 
+</p>
+<p>does indicate that the project has yet to be fully endorsed by the ASF.
+</p>
+<p>See the Apache Tika Incubation Status page for the current incubation status.
+</p>
+<p>Latest News
+</p>
+<p>March 22nd, 2007: Apache Tika project started
+</p>
+<p>The Apache Tika project was formally started when the Tika proposal was accepted by the Apache 
+</p>
+<p>Incubator PMC. </p>
+<p/>
+</div>
+</body>
+</html>

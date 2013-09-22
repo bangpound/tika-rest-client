@@ -5,6 +5,30 @@
     "require": {
         "guzzle/guzzle": "~3.7.2"
     },
+    "require-dev": {
+        "monolog/monolog": "1.*",
+        "psr/log": "1.0.*",
+        "phpunit/phpunit": "3.7.*",
+        "apache/tika": "~1.4"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "apache/tika",
+                "version": "1.4",
+                "dist": {
+                    "url": "ftp://apache.mirrors.pair.com/tika/tika-1.4-src.zip",
+                    "type": "zip"
+                },
+                "source": {
+                    "url": "git://git.apache.org/tika.git",
+                    "type": "git",
+                    "reference": "1.4"
+                }
+            }
+        }
+    ],
     "authors": [
         {
             "name": "Benjamin Doherty",
@@ -13,7 +37,8 @@
     ],
     "autoload": {
         "psr-0": {
-            "Bangpound\\Tika\\": "src/"
+            "Bangpound\\Tika\\": "src/",
+            "Bangpound\\Tika\\Tests\\": "tests/"
         }
     }
 }
