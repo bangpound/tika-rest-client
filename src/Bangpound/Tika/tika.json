@@ -59,6 +59,8 @@
         "meta": {
             "extends": "_base",
             "uri": "meta{/id}",
+            "responseType": "class",
+            "responseClass": "Bangpound\\Tika\\MetaResponse",
             "summary": "extract metadata",
             "parameters": {
                 "file": {

@@ -1,0 +1,26 @@
+HTTP/1.1 200 OK
+Content-Type: text/csv
+Date: Sun, 22 Sep 2013 20:54:43 GMT
+Content-Length: 732
+Server: Jetty(7.x.y-SNAPSHOT)
+
+"dcterms:modified","2007-09-15T09:02:31Z"
+"meta:creation-date","2007-09-15T09:02:31Z"
+"meta:save-date","2007-09-15T09:02:31Z"
+"dc:creator","Bertrand Delacrétaz"
+"Last-Modified","2007-09-15T09:02:31Z"
+"Author","Bertrand Delacrétaz"
+"dcterms:created","2007-09-15T09:02:31Z"
+"date","2007-09-15T09:02:31Z"
+"modified","2007-09-15T09:02:31Z"
+"creator","Bertrand Delacrétaz"
+"xmpTPg:NPages","1"
+"Creation-Date","2007-09-15T09:02:31Z"
+"title","Apache Tika - Apache Tika"
+"meta:author","Bertrand Delacrétaz"
+"created","Sat Sep 15 04:02:31 CDT 2007"
+"producer","Mac OS X 10.4.10 Quartz PDFContext"
+"Content-Type","application/pdf"
+"xmp:CreatorTool","Firefox"
+"Last-Save-Date","2007-09-15T09:02:31Z"
+"dc:title","Apache Tika - Apache Tika"

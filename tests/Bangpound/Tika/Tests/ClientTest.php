@@ -62,4 +62,25 @@ class ClientTest extends \Guzzle\Tests\GuzzleTestCase
         $this->assertNotContains('ToolkitApache', $content, 'should have word boundary after headline');
         $this->assertNotContains('libraries.Apache', $content, 'should have word boundary between paragraphs');
     }
+
+    public function testMeta()
+    {
+        $client = $this->getServiceBuilder()->get('test.mock');
+        $this->setMockResponse($client, array(
+            'meta.txt',
+        ));
+
+        $file = __DIR__ .'/../../../../' . $_SERVER['TIKA_SRC_PATH'] . DIRECTORY_SEPARATOR .'testPDF.pdf';
+
+        $response = $client->meta(array('file' => $file));
+
+        $this->assertEquals('application/pdf', $response->metadata('Content-Type'));
+        $this->assertEquals('Bertrand Delacrétaz', $response->metadata('creator'));
+        $this->assertEquals('Bertrand Delacrétaz', $response->metadata('Author'));
+        $this->assertEquals('Firefox', $response->metadata('xmp:CreatorTool'));
+        $this->assertEquals('Apache Tika - Apache Tika', $response->metadata('dc:title'));
+
+        $this->assertEquals('2007-09-15T09:02:31Z', $response->metadata('date'));
+        $this->assertEquals('2007-09-15T09:02:31Z', $response->metadata('modified'));
+    }
 }
