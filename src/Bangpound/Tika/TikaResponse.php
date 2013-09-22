@@ -8,6 +8,7 @@ use Guzzle\Service\Command\ResponseClassInterface;
 class TikaResponse implements ResponseClassInterface
 {
     private $xml;
+    private $metadata = array();
 
     /**
      * @param OperationCommand $command
@@ -28,6 +29,18 @@ class TikaResponse implements ResponseClassInterface
     public function __construct(\SimpleXMLElement $xml)
     {
         $this->xml = $xml;
+        $this->metadata = array();
+        /** @var \SimpleXMLElement $child */
+        foreach ($this->getHead()->children()->meta as $child) {
+            $key = (string) $child['name'];
+            $value = (string) $child['content'];
+            $this->metadata[$key] = $value;
+        }
+    }
+
+    public function metadata($key = null)
+    {
+        return $key ? $this->metadata[$key] : $this->metadata;
     }
 
     /**
