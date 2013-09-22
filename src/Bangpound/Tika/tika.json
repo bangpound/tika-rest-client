@@ -3,6 +3,14 @@
     "apiVersion": "1.4",
     "description": "content analysis toolkit http://tika.apache.org",
     "operations": {
+        "greeting": {
+            "httpMethod": "GET",
+            "uri": "tika"
+        },
+        "version": {
+            "httpMethod": "GET",
+            "uri": "version"
+        },
         "_base": {
             "httpMethod": "PUT",
             "errorResponses": [
