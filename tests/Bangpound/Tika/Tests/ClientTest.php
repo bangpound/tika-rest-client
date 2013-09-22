@@ -43,7 +43,7 @@ class ClientTest extends \Guzzle\Tests\GuzzleTestCase
         $file = __DIR__ .'/../../../../' . $_SERVER['TIKA_SRC_PATH'] . DIRECTORY_SEPARATOR .'testPDF.pdf';
 
         /** @var \Bangpound\Tika\TikaResponse $response */
-        $response = $client->tika(array('file' => fopen($file, 'r')));
+        $response = $client->tika(array('file' => $file));
 
         $this->assertEquals('application/pdf', $response->metadata('Content-Type'));
         $this->assertEquals('Bertrand Delacrétaz', $response->metadata('creator'));
