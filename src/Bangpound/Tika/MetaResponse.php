@@ -7,7 +7,7 @@ use Guzzle\Service\Command\ResponseClassInterface;
 
 class MetaResponse implements ResponseClassInterface
 {
-    private $metadata = array();
+    use Metadata;
 
     public function __construct($metadata = array())
     {
@@ -32,14 +32,5 @@ class MetaResponse implements ResponseClassInterface
         }
 
         return new self($metadata);
-    }
-
-    /**
-     * @param  string       $key Specify metadata key or method returns array of all metadata
-     * @return string|array
-     */
-    public function metadata($key = null)
-    {
-        return $key ? $this->metadata[$key] : $this->metadata;
     }
 }

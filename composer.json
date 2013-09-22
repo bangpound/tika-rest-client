@@ -3,6 +3,7 @@
     "description": "Web services client for Apache Tika",
     "license": "MIT",
     "require": {
+        "php": ">=5.4.0",
         "guzzle/guzzle": "~3.7.2"
     },
     "require-dev": {
