@@ -45,6 +45,10 @@
                     "location": "uri",
                     "required": false
                 },
+                "type": {
+                    "location": "header",
+                    "sentAs": "Content-Type"
+                },
                 "Accept": {
                     "location": "header",
                     "default": "text/xml",
