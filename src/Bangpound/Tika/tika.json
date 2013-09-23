@@ -16,7 +16,11 @@
             "parameters": {
                 "file": {
                     "location": "body",
-                    "required": true
+                    "required": true,
+                    "description": "A file resource or string path.",
+                    "filters": [
+                        "Bangpound\\Tika\\Utils::toResource"
+                    ]
                 },
                 "id": {
                     "location": "uri",
