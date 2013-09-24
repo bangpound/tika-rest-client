@@ -6,7 +6,6 @@ use Bangpound\Tika\Client;
 use Guzzle\Http\Message\Response;
 
 /**
- * @group server
  * @covers Bangpound\Tika\Client
  */
 class ClientTest extends \Guzzle\Tests\GuzzleTestCase
@@ -72,6 +71,7 @@ class ClientTest extends \Guzzle\Tests\GuzzleTestCase
 
         $file = __DIR__ .'/../../../../' . $_SERVER['TIKA_SRC_PATH'] . DIRECTORY_SEPARATOR .'testPDF.pdf';
 
+        /** @var \Bangpound\Tika\MetaResponse $response */
         $response = $client->meta(array('file' => $file));
 
         $this->assertEquals('application/pdf', $response->metadata('Content-Type'));
