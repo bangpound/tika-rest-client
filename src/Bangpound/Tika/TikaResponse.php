@@ -215,4 +215,22 @@ class TikaResponse implements ResponseClassInterface, \ArrayAccess, \Countable, 
     {
         $this->position = 1;
     }
+
+    public function __toString()
+    {
+        $output = '';
+        foreach ($this as $page) {
+            $output .= $page->asXML();
+        }
+        return $output;
+    }
+
+    public function toArray()
+    {
+        $output = array();
+        foreach ($this as $page) {
+            $output[] = $page->asXML();
+        }
+        return $output;
+    }
 }
