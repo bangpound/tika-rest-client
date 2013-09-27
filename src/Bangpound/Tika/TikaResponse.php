@@ -222,6 +222,7 @@ class TikaResponse implements ResponseClassInterface, \ArrayAccess, \Countable, 
         foreach ($this as $page) {
             $output .= $page->asXML();
         }
+
         return $output;
     }
 
@@ -231,6 +232,7 @@ class TikaResponse implements ResponseClassInterface, \ArrayAccess, \Countable, 
         foreach ($this as $page) {
             $output[] = $page->asXML();
         }
+
         return $output;
     }
 }
