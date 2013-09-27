@@ -5,6 +5,11 @@ namespace Bangpound\Tika;
 use Guzzle\Service\Client as BaseClient;
 use Guzzle\Service\Description\ServiceDescription;
 
+/**
+ * \Guzzle\Service\Client::__call() handles undefined method calls.
+ *
+ * @method \Bangpound\Tika\Client tika(array $args)
+ */
 class Client extends BaseClient
 {
     public function __construct($baseUrl = '', $config = null)
