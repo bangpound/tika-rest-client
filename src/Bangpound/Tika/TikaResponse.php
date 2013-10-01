@@ -5,7 +5,7 @@ namespace Bangpound\Tika;
 use Guzzle\Service\Command\OperationCommand;
 use Guzzle\Service\Command\ResponseClassInterface;
 
-class TikaResponse implements ResponseClassInterface, \ArrayAccess, \Countable, \Iterator
+class TikaResponse implements ResponseClassInterface, \ArrayAccess, \Countable, \Iterator, \Serializable
 {
     use Metadata;
 
@@ -234,5 +234,15 @@ class TikaResponse implements ResponseClassInterface, \ArrayAccess, \Countable, 
         }
 
         return $output;
+    }
+
+    public function serialize()
+    {
+        return $this->xml->asXML();
+    }
+
+    public function unserialize($xml)
+    {
+        $this->xml = simplexml_load_string($xml);
     }
 }
