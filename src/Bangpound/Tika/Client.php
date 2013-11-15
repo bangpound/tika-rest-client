@@ -8,7 +8,11 @@ use Guzzle\Service\Description\ServiceDescription;
 /**
  * \Guzzle\Service\Client::__call() handles undefined method calls.
  *
+ * @method \Bangpound\Tika\Client greeting()
+ * @method \Bangpound\Tika\Client version()
  * @method \Bangpound\Tika\Client tika(array $args)
+ * @method \Bangpound\Tika\Client meta(array $args)
+ * @method \Bangpound\Tika\Client unpacker(array $args)
  */
 class Client extends BaseClient
 {
