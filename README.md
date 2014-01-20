@@ -41,7 +41,9 @@ Or you can edit your `composer.json` file to include this requirement:
 ```php
 <?php
 $client = new Bangpound\Tika\Client('http://localhost:9998');
-$response = $client->tika('TestPDF.pdf');
+$response = $this->tika(array(
+    'file' => 'TestPDF.pdf',
+));
 
 // Metadata varies by file and file type, so refer to the Apache Tika docs for details.
 $all_metadata = $response->metadata;
