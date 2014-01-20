@@ -41,7 +41,7 @@ Or you can edit your `composer.json` file to include this requirement:
 ```php
 <?php
 $client = new Bangpound\Tika\Client('http://localhost:9998');
-$response = $this->tika(array(
+$response = $client->tika(array(
     'file' => 'TestPDF.pdf',
 ));
 
