@@ -17,15 +17,15 @@
             "type": "package",
             "package": {
                 "name": "apache/tika",
-                "version": "1.4",
+                "version": "1.5",
                 "dist": {
-                    "url": "ftp://apache.mirrors.pair.com/tika/tika-1.4-src.zip",
+                    "url": "http://psg.mtu.edu/pub/apache/tika/tika-1.5-src.zip",
                     "type": "zip"
                 },
                 "source": {
                     "url": "git://git.apache.org/tika.git",
                     "type": "git",
-                    "reference": "1.4"
+                    "reference": "1.5-rc2"
                 }
             }
         }
