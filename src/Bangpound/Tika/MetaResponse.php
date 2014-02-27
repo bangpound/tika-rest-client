@@ -5,10 +5,8 @@ namespace Bangpound\Tika;
 use Guzzle\Service\Command\OperationCommand;
 use Guzzle\Service\Command\ResponseClassInterface;
 
-class MetaResponse implements ResponseClassInterface
+class MetaResponse extends Metadata implements ResponseClassInterface
 {
-    use Metadata;
-
     public function __construct($metadata = array())
     {
         $this->metadata = $metadata;

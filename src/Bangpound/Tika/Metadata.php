@@ -2,9 +2,9 @@
 
 namespace Bangpound\Tika;
 
-trait Metadata
+abstract class Metadata
 {
-    private $metadata = array();
+    protected $metadata = array();
 
     /**
      * @param  string       $key Specify metadata key or method returns array of all metadata

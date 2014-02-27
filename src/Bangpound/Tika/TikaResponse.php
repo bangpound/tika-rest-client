@@ -5,10 +5,8 @@ namespace Bangpound\Tika;
 use Guzzle\Service\Command\OperationCommand;
 use Guzzle\Service\Command\ResponseClassInterface;
 
-class TikaResponse implements ResponseClassInterface, \ArrayAccess, \Countable, \Iterator, \Serializable
+class TikaResponse extends Metadata implements ResponseClassInterface, \ArrayAccess, \Countable, \Iterator, \Serializable
 {
-    use Metadata;
-
     private $xml;
     private $position = 1;
 
