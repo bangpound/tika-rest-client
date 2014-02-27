@@ -14,13 +14,13 @@ class TikaResponseTest extends \Guzzle\Tests\GuzzleTestCase
      * This attaches all the required expectations in the right order so that
      * our iterator will act like an iterator!
      *
-     * @param Iterator $iterator The iterator object; this is what we attach
-     *      all the expectations to
+     * @param Iterator $iterator          The iterator object; this is what we attach
+     *                                    all the expectations to
      * @param array An array of items that we will mock up, we will use the
-     *      keys (if needed) and values of this array to return
-     * @param boolean $includeCallsToKey Whether we want to mock up the calls
-     *      to "key"; only needed if you are doing foreach ($foo as $k => $v)
-     *      as opposed to foreach ($foo as $v)
+     *                                    keys (if needed) and values of this array to return
+     * @param boolean  $includeCallsToKey Whether we want to mock up the calls
+     *                                    to "key"; only needed if you are doing foreach ($foo as $k => $v)
+     *                                    as opposed to foreach ($foo as $v)
      */
     private function mockIterator(
         \Iterator $iterator,
