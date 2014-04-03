@@ -48,7 +48,7 @@
         },
         "tika": {
             "extends": "_base",
-            "uri": "tika{/id}",
+            "uri": "tika",
             "summary": "extract content",
             "responseNotes": "",
             "responseType": "class",
@@ -64,7 +64,7 @@
         },
         "meta": {
             "extends": "_base",
-            "uri": "meta{/id}",
+            "uri": "meta",
             "responseType": "class",
             "responseClass": "Bangpound\\Tika\\MetaResponse",
             "summary": "extract metadata",
