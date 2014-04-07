@@ -5,9 +5,20 @@ namespace Bangpound\Tika;
 use Guzzle\Service\Command\OperationCommand;
 use Guzzle\Service\Command\ResponseClassInterface;
 
+/**
+ * Class TikaResponse
+ * @package Bangpound\Tika
+ */
 class TikaResponse extends Metadata implements ResponseClassInterface, \ArrayAccess, \Countable, \Iterator, \Serializable
 {
+    /**
+     * @var \SimpleXMLElement
+     */
     private $xml;
+
+    /**
+     * @var int
+     */
     private $position = 1;
 
     /**
@@ -131,10 +142,7 @@ class TikaResponse extends Metadata implements ResponseClassInterface, \ArrayAcc
     }
 
     /**
-     * (PHP 5 &gt;= 5.0.0)<br/>
-     * Move forward to next element
-     * @link http://php.net/manual/en/iterator.next.php
-     * @return void Any returned value is ignored.
+     * {@inheritdoc}
      */
     public function next()
     {
@@ -165,6 +173,9 @@ class TikaResponse extends Metadata implements ResponseClassInterface, \ArrayAcc
         $this->position = 1;
     }
 
+    /**
+     * @return string
+     */
     public function __toString()
     {
         $output = '';
@@ -175,6 +186,9 @@ class TikaResponse extends Metadata implements ResponseClassInterface, \ArrayAcc
         return $output;
     }
 
+    /**
+     * @return array
+     */
     public function toArray()
     {
         $output = array();
@@ -185,11 +199,17 @@ class TikaResponse extends Metadata implements ResponseClassInterface, \ArrayAcc
         return $output;
     }
 
+    /**
+     * @return mixed
+     */
     public function serialize()
     {
         return $this->xml->asXML();
     }
 
+    /**
+     * @param string $xml
+     */
     public function unserialize($xml)
     {
         $this->xml = simplexml_load_string($xml);
