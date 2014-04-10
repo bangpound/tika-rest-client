@@ -84,4 +84,9 @@ class TikaResponse extends Metadata implements ResponseClassInterface, \Serializ
     {
         $this->xml = simplexml_load_string($xml);
     }
+
+    public function __toString()
+    {
+        return $this->xml->asXML();
+    }
 }
