@@ -41,5 +41,10 @@
             "Bangpound\\Tika\\": "src/",
             "Bangpound\\Tika\\Tests\\": "tests/"
         }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
     }
 }
