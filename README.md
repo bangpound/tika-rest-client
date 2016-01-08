@@ -29,7 +29,7 @@ Or you can edit your `composer.json` file to include this requirement:
 ```json
 {
     "require": {
-        "bangpound/tika-rest-client": "dev-master"
+        "bangpound/tika-rest-client": "^1.0"
     }
 }
 ```
